@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+	<head>
+		<title>{% if og_title != '' %}{{ og_title }}{% if notitle != 1 %} - {% endif %}{% endif %}{% if notitle != 1 %}{{ site.public_name }}{% endif %}</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<base href="{{ base_url }}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="{{ site.keywords }}" />
+		<meta name="description" content="{{ og_desc }}" />
+        <meta name="robots" content="{{ site.robots }}">
+        <meta name="dcterms.rightsHolder" content="© {{ now|date("Y") }} {{ site.copyright }}">
+        <meta name="copyright" content="© {{ now|date("Y") }} {{ site.copyright }}">
+
+		<meta property="og:site_name" content="{{ site.public_name }}" />
+        <meta property="og:og_title" content="{{ og_title }} - {{ site.public_name }}" />
+		<meta property="og:description" content="{{ og_desc }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="{{ og_logo }}" />
+		<meta property="fb:admins" content="{{ site.facebook_admins }}" />
+        <meta property="fb:app_id" content="1696438830652468" />
+        <meta property="fb:page_id" content="1839907789661332" />
+
+        <meta http-equiv="content-language" content="{{ lang }}">
+		<meta http-equiv="cache-control" content="no-cache">
+
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Budapest",
+				"addressRegion": "Hungary",
+				"postalCode":"1134",
+				"streetAddress": "Váci út 70."
+			},
+			"description": "{{ site.og_descr }}",
+			"name": "{{ site.public_name }}",
+			"telephone": "{{ site.phone1 }}",
+			"email": "{{ site.email }}",
+			"url": "{{ base_url }}",
+			"openingHours": "Mo,Tu,We,Th 10:00-20:00, Fr 10:00-19:00 Sa 10:00-14:00",
+			"paymentAccepted": "Cash, Credit card, Wire transfer",
+			"priceRange": "Low-mid",
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "47.523507",
+				"longitude": "19.062746"
+			},
+			"image": "{{ base_url }}/images/logo-og.png",
+			"logo": "{{ base_url }}/images/logo-og.png"
+		}
+		</script>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/imageos/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="manifest" href="/images/manifest.json">
+		<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+
+		<script type="text/javascript">
+
+			// google analytics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', '{{ site.analytics_code }}', 'auto');
+            ga('require','displayfeatures');
+			ga('send', 'pageview');
+
+			// call conversion
+			(function(a,e,c,f,g,h,b,d){var k={ak:"1064991225",cl:"gODkCNmeuXIQ-fPp-wM",autoreplace:"{{ site.phone1 }}"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[g]||(a[g]=k.ak);b=e.createElement(h);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(h)[0];d.parentNode.insertBefore(b,d);a[f]=function(b,d,e){a[c](2,b,k,d,null,new Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script");
+			(function(a,e,c,f,g,h,b,d){var k={ak:"1064991225",cl:"vpKACODHp3IQ-fPp-wM",autoreplace:"+36 20 208 7878"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[g]||(a[g]=k.ak);b=e.createElement(h);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(h)[0];d.parentNode.insertBefore(b,d);a[f]=function(b,d,e){a[c](2,b,k,d,null,new Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script");
+
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+		<noscript>
+			<div style="display:inline;">
+				<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1064991225/?guid=ON&amp;script=0"/>
+			</div>
+		</noscript>
+	</head>
+	<body class="type-{% if type != '' %}{{ type }}{% else %}cimlap{% endif %} {% if item != 0 %}item-{{item}}{% else %}item-{{item}}{% endif %}{% if notfound == 1 %} type-404{% endif %}">
+		<div class="site_container">
+            <div id="hero" style="{% if vaccine_id > 0 %}background: url(/images/vaccines/{{ vaccine_id }}.jpg) no-repeat;{% endif %}">
+            	<div class="hero-in">
+                 <div class="content">
+                  <h3>{% if hero_h1 is defined %}{{ hero_h1 }}{% else %}{{ L.mainpage_h1.phrase }}{% endif %}</h3>
+                  <p>{% if hero_h2 is defined %}{{ hero_h2 }}{% else %}{{ L.mainpage_h2.phrase }}{% endif %}</p>
+ 	              {% if method == '' %}<a class="button" href="/{{ lang }}/{{ langdata.lang_appointment }}">{{ L.menu_appointment.phrase }}</a>{% endif %}
+                 </div>
+                </div>
+            </div>
+			<!--<div class="header_container small">
+			<div class="header_container style_2">
+			<div class="header_container style_2 small">
+			<div class="header_container style_3">
+			<div class="header_container style_3 small">-->
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="/" title="{{ site.public_name }}" alt="{{ site.public_name }}"><img src="/images/logo.png" alt="logo"/></a></h1>
+					</div>
+				</div>
+
+			<div class="menu_container clearfix">
+				<nav>
+				<ul class="sf-menu">
+					<li {% if method == 'utazas' or method == 'travel' or method == 'reise' %}class="selected"{% endif %}>
+						<a href="/{{ lang }}/{{ langdata.lang_travel }}" title="{{ L.menu_travel.phrase }}">
+							{{ L.menu_travel.phrase }}
+						</a>
+					</li>
+					<li {% if method == 'vakcina' or method == 'oltas' or method == 'impfstoff' or method == 'vaccine' %}class="selected"{% endif %}>
+						<a href="/{{ lang }}/{{ langdata.lang_vaccine }}" title="{{ L.menu_vaccines.phrase }}">
+							{{ L.menu_vaccines.phrase }}
+						</a>
+					</li>
+					<li {% if method == 'betegseg' or method == 'krankheiten' or method == 'diseases' %}class="selected"{% endif %}>
+						<a href="/{{ lang }}/{{ langdata.lang_diseases }}" title="{{ L.menu_diseases.phrase }}">
+							{{ L.menu_diseases.phrase }}
+						</a>
+					</li>
+					<li {% if method == 'static' and (submethod == 'szolgaltatasok' or submethod == 'plifchten' or submethod == 'services') %}class="selected"{% endif %}>
+						<a href="/{{ lang }}/static/{{ langdata.lang_services }}" title="{{ L.menu_services.phrase }}">
+							{{ L.menu_services.phrase }}
+						</a>
+					</li>
+					<li {% if method == 'kapcsolat' or method == 'contact' or method == 'kontakt' %}class="selected"{% endif %}>
+						<a href="/{{ lang }}/{{ langdata.lang_contact }}" title="{{ L.menu_contact.phrase }}">
+							{{ L.menu_contact.phrase }}
+						</a>
+					</li>
+					<li>
+						<a href="/{{ lang }}/{{ langdata.lang_appointment }}" title="{{ L.menu_appointment.phrase }}">
+							{{ L.menu_appointment.phrase }}
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li class="submenu {% if method == 'utazas' or method == 'travel' or method == 'reise' %}selected{% endif %}">
+							<a href="/{{ lang }}/{{ langdata.lang_travel }}" title="{{ L.menu_travel.phrase }}">
+								{{ L.menu_travel.phrase }}
+							</a>
+						</li>
+						<li class="submenu {% if method == 'vakcina' or method == 'oltas' or method == 'impfstoff' or method == 'vaccine' %}selected{% endif %}">
+							<a href="/{{ lang }}/{{ langdata.lang_vaccine }}" title="{{ L.menu_vaccines.phrase }}">
+								{{ L.menu_vaccines.phrase }}
+							</a>
+						</li>
+						<li class="submenu {% if method == 'betegseg' or method == 'krankheiten' or method == 'diseases' %}selected{% endif %}">
+							<a href="/{{ lang }}/{{ langdata.lang_diseases }}" title="{{ L.menu_diseases.phrase }}">
+								{{ L.menu_diseases.phrase }}
+							</a>
+						</li>
+						<li class="submenu {% if method == 'static' and (submethod == 'szolgaltatasok' or submethod == 'plifchten' or submethod == 'services') %}selected{% endif %}">
+							<a href="/{{ lang }}/static/{{ langdata.lang_services }}" title="{{ L.menu_services.phrase }}">
+								{{ L.menu_services.phrase }}
+							</a>
+						</li>
+						<li class="submenu {% if method == 'kapcsolat' or method == 'contact' or method == 'kontakt' %}selected{% endif %}" >
+							<a href="/{{ lang }}/{{ langdata.lang_contact }}" title="{{ L.menu_contact.phrase }}">
+								{{ L.menu_contact.phrase }}
+							</a>
+						</li>
+						<li class="submenu">
+							<a href="/{{ lang }}/{{ langdata.lang_appointment }}" title="{{ L.menu_appointment.phrase }}">
+								{{ L.menu_appointment.phrase }}
+							</a>
+						</li>
+					</ul>
+                    <div class="nav_custom">
+                    	<span>&nbsp;</span>
+                    </div>
+					</nav>
+				</div>
+
+                
+			</div>
+
+			</div>
+
+			<div class="page">
+{{ content }}
+			</div>
+			<div class="footer_container">
+				<div class="footer clearfix">
+				<div class="row row-1">
+									<h4><a href="/" class="footer-logo" alt="Főoldal">Főoldal</a></h4>
+				</div>      
+				<div class="row row-2">
+                
+									<h5>{{ L.appointment_phone.phrase }}</h5>
+									<p>
+										<a href="tel:{{ site.phone1 }}">{{ site.phone1 }}</a><br>
+										<a href="tel:{{ site.phone2 }}">{{ site.phone2 }}</a><br>
+                                        <a href="tel:+36 20 208 7878">+36 20 208 7878</a>
+									</p>           
+                                    <h5 class="footer-email">E-mail</h5>
+                                    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                                                   
+				</div>    
+				<div class="row row-3">
+                					<h5>{{ L.openhours.phrase }}</h5>
+                                    <ul class="nyitva">
+{% for o in openhours %}
+                                    	<li>{{ o.day }}<span>{% if o.close > o.open %}{{  o.open }}:00-{{ o.close }}:00{% else %}{{ L.closed.phrase }}{% endif %}</span></li>
+{% endfor %}
+                                    </ul> 
+                                    <h5>{{ L.address.phrase }}</h5>
+									<p>
+										{{ site.address }}<br>
+									</p>                                    
+
+				</div>                                              
+				</div>                
+				<div class="row-clear">
+							<ul class="footer_menu">
+                            	<li>2017 Oltóközpont Kft.</li>
+								<li>
+									<a href="/{{ lang }}/static/{{ langdata.lang_aboutus }}" title="{{ L.footer_aboutus.phrase }}">{{ L.footer_aboutus.phrase }}</a>
+								</li>
+<!--                                <li>
+                                	<a href="jogi">Jogi nyilatkozat</a>
+                                 </li>-->
+							</ul>
+							<ul class="footer_lang">
+{% for l in allowed_langs %}
+								<li class="en">
+									<a href="/{{l.iso_code }}">{{l.iso_code|upper}}</a>
+								</li>
+{% endfor %}
+							</ul>                            
+					</div>
+			</div>
+		</div>
+		<div class="background_overlay"></div>
+
+		<!-- css -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+        <link rel="stylesheet" type="text/css" href="style/select2.css">
+
+		<!-- js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js/datepicker-hu.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+		<script type="text/javascript" src="js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="js/jquery.hint.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="js/select2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pseudo.js"></script>
+        <script type="text/javascript" src="js/moment.min.js"></script>
+
+		<!-- some magic -->
+        <script type="text/javascript" src="js/core.js"></script>
+		<script type="text/javascript">
+			core.lang = '{{ lang }}';
+{% for d in opendays if d.is_open == 1 %}
+			core.eventDates['{{ d.dd }}'] = 1;
+{% endfor %}
+		</script>
+	</body>
+</html>
+sdfsd
