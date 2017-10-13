@@ -98,3 +98,4 @@ $( document ).ready(function() {
 
 
 
+Ez így szar
